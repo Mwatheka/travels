@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galdessa Camp</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-4lCUNt1+5cDZgeZA5XhFvGBkJktUUDse27oTjbcKePA7hTP1DJK5pj5BA5chLZZ8RW2dhdBoYy9vA3oUyMjG4g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+  <!-- Custom CSS -->
+  <style>
+    hr {
+      color: black; /* color of the line */
+      background-color:black; /* background color of the line */
+      border: 1px solid black;
+      
+  }
+    .gallery-item img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+  }
+  
+  .carousel-item img {
+      width: 230px;
+      height: 300px;
+      object-fit: cover;
+  }
+  
+  .carousel-item {
+      display: none;
+  }
+  
+  .carousel-item.active {
+      display: block;
+  }
+  
+  .icons-container {
+      background-image: url('image 2.jpg');
+      background-size: cover;
+      background-position: center;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; /* Center vertically */
+      align-items: center; /* Center horizontally */
+  }
+  
+  .icons-container a.btn {
+      padding: 20px 40px; /* Adjust padding to increase button size */
+      margin-bottom: 20px; /* Add margin between buttons */
+  }
+  
+  .navbar.nav-bg {
+      background-color: transparent; /* Updated background color to transparent */
+      color: white; /* Updated text color to white */
+  }
+  
+  .nav-links {
+      display: flex; /* Use flexbox */
+      justify-content: center; /* Center the list items horizontally */
+      padding-left: 0; /* Remove default padding */
+  }
+  
+  .navbar.nav-bg .nav-link {
+      color: white; /* Set text color to white */
+  }
+  
+  .navbar.nav-bg .navbar-toggler-icon {
+      background-color: white; /* Set icon color to white */
+  }
+  
+  .navbar.nav-bg .navbar-toggler {
+      border-color: white; /* Set border color to white */
+      color: white; /* Set text color to white */
+  }
+  
+  .navbar.nav-bg .navbar-toggler:focus,
+  .navbar.nav-bg .navbar-toggler:active {
+      outline: none; /* Remove outline on focus or active state */
+  }
+  
+  .nav-item {
+      margin-right: 10px; /* Add space between list items */
+  }
+  
+  .nav-item:last-child {
+      margin-right: 0; /* Remove margin from the last list item */
+  }
+  
+  .nav-item a {
+      color: white; /* Set white text color */
+      background-color: black; /* Set black background */
+      padding: 10px 20px; /* Adjust padding */
+      border-radius: 5px; /* Add border radius */
+  }
+  
+  .nav-item:hover {
+      background-color: #333; /* Darken background on hover */
+  }
+  
+  
+    
+    
+    
+    
+    
+      
+  </style>
+</head>
+<body style="font-family: Georgia, 'Times New Roman', Times, serif;">
+  <header class=" py-3">
+    <div class="container-fluid">
+      <div class="row align-items-center">
+        <div class="col">
+          <h1>Galdessa Camp</h1>
+        </div>
+        <div class="col text-end">
+          <strong>
+          <h6 style="color:black">Email:
+            bookings@bookingsmgt.co.ke
+          </h6>
+          <h6>
+            Telephone: +254 724 348088
+          </h6>
+        <h6>P.O BOX 3330213</h6>  
+      </strong>      
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg nav-bg">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav nav-links">
+            <li class="nav-item"><a href="" class="nav-link">HOME</a></li>
+            <li class="nav-item"><a href="" class="nav-link">ABOUT US</a></li>
+            <li class="nav-item"><a href="" class="nav-link">WHY US</a></li>
+            <li class="nav-item"><a href="" class="nav-link">REVIEWS</a></li>
+            <li class="nav-item"><a href="" class="nav-link">BLOGS</a></li>
+            <li class="nav-item"><a href="#gallery" class="nav-link">GALLERY</a></li>
+            <li class="nav-item"><a href="#contact" class="nav-link">CONTACT US</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+  
+  
+
+  <main class="container py-5">
+    <section class="row">
+      <div class="col-md-12">
+        <div style="position:relative;">
+          <img src="Galdessa bedroom main camp.jpg" alt="Banner Image" style="width:100%; height:100vh; object-fit: cover;">
+          <div style="position:absolute;top:50%;left:30%;transform:translate(-50%,-50%);text-align:left; background-color:rgba(0, 0, 0, 0.5);">
+               <p style="font-size: 30px; color:white;">Galdessa Camp</p>
+               <p style="font-size: 30px; color:white;">Tsavo East Park</p> 
+               <p style="font-size: 30px; color:white;">Kenya</p> 
+               <p style="font-size: 30px; color:white;">Galdessa Little Camp</p> 
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr class="hr">
+    <section class="row">
+      <div class="col-md-12">
+        <h2>Des</h2>
+          <p style="text-align:justify;">
+            Galdessa Camp is a hidden gem a lovely small little camp and an intimate tented camp located in a quiet corner of Tsavo East National Park in Kenya- Galdessa Camp can be booked exclusively and is situated a short distance from its sister safari camp the Galdessa little Camp, The Galdessa Camp is one of Kenya's best-kept secrets, The word Galdessa means baboons in Walangulu, the ancient tribe that used to live in the area of Galdessa Tsavo hunting elephants with bows and arrow, Galdessa Camp offers a luxurious yet wild magical experience for travelers seeking to immerse themselves in a hidden and untouched corner of Tsavo East National Park
+      </div>
+    </section>
+    <hr class="hr">
+    <section class="row">
+      <div class="col-md-12">
+        <h2>Accomodation</h2>
+          <p style="text-align:justify;">
+            Galdessa Camp offers a luxurious and once in a lifetime opportunity for travelers seeking to immerse themselves in a hidden and untouched corner of Tsavo National Park. Enjoying a position on the Galana river, wildlife sightings are frequent, whether guests enjoy a game drive or remain at the camp watching hippos, elephants and more as they come to cool off in the river. Self-catering, fully staffed with trained chef. Galdessa Camp accommodates 10 people across five tents. It can be booked in tandem with Galdessa Little, which sleeps a further 6 people across three tents. The semi-tented bungalows at Galdessa are solid, permanent structures, built on wooden platforms and spaced far enough apart to ensure a good level of privacy. Bathrooms have bucket showers (hot water on demand), and flush toilets. The rooms have a very natural, earthy feel, with furniture constructed from tree trunks and branches found within the park, dark polished wood panel floors, thatch roofing, and walls that are part canvas, part stone-and-mortar. They open onto private viewing decks.
+      </div>
+    </section>
+    <br>
+    <hr class="hr">
+    <section class="row">
+      <div class="col-md-12">
+        <h6>Keywords</h6>
+        <p style="text-align:justify;">
+          Galdessa, Galdessa Camp, Galdessa Camp in Tsavo East, Galdessa Camp Tsavo East, Tsavo Galdessa Camp, Galdessa Lodge, Galdessa Camp Tsavo National Park, Galdessa Lodge in Tsavo East, Galdessa Camp Kenya, Galdessa Hotel, Galdessa Main Camp, Galdessa Private Camp, Galdessa Little Camp, Little Galdessa Camp, Private Galdessa Camp, Small Galdessa Camp, Galdessa Private Camp In Tsavo Park, Galdessa Private Camp Kenya, Tsavo East Park, Tsavo East Camps, Camps in Tsavo East, tented camps in Tsavo East Park, camp in Tsavo East Park. Tented camps, safari camps, camps, Kenya
+
+        </p>
+  
+            <p style="text-align:justify;">
+               <b>Galdessa Camp</b> is a hidden gem a lovely small little camp and an intimate <b>tented camp</b> located in a quiet corner of<b> Tsavo East National Park in Kenya Galdessa Camp</b>  can be booked exclusively and is situated a short distance from its sister <b>safari camp</b> the<b> Galdessa little Camp</b>, The <b>Galdessa Camp </b>is one of Kenya's best-kept secrets, The word <b>Galdessa</b> means baboons in Walangulu, the ancient tribe that used to live in the area of <b>Galdessa Tsavo</b> hunting elephants with bows and arrow, <b>Galdessa Camp</b> offers a luxurious yet wild magical experience for travelers seeking to immerse themselves in a hidden and untouched corner of Tsavo East National Park, wildlife sightings are common due to the <b>Galdessa Camp </b>location on the Galana River, whether guests go on a game drive or stay at the <b>Galdessa Camp</b> to watch the resident hippos, elephants and other animals come to cool off in the river, Galdessa Camp overlooks the impressive Yatta Plateau which the world’s oldest and longest fossilized lava flow, the Lugard Falls are but 15 minutes away from the <b>Galdessa Camp</b> and the vast open plains surrounding the area are endowed with wildlife. The <b>Galdessa Camp</b> lies off the beaten track which allows visitors to this part of the Tsavo park the privacy and luxury of truly feeling a part of the wilderness. The <b>Galdessa Camp </b>is <b>not fenced</b> in and a number of wild animals come right into safari camp, especially during the dry season where they come to the river to drink. The <b>Galdessa Camp</b> has a number of resident elephants as well as a family of hippos residing in the river waters outside camp that often come into camp at night to graze. he <b>Galdessa Camp</b> open four-wheel drive vehicles take guests to discover the river frontage and its seasonal tributaries (lugards). As they often have permanent pools, the lugards are favourite haunts of lion, cheetah, elephant, buffalo, and rhino. At <b>Galdessa Camp </b>full or half day game drives can be arranged to explore the Park's expanses and a 3-course picnic lunch served by staff with cold, iced drinks at the selected lunch camp sites. Bush breakfasts and dinners can also be organised. Tsavo East National Park is great walking country, and <b>Galdessa Camp</b> is renowned for its walking safaris. Guests can enjoy discovering the diversity of the park on foot and have an intimate encounter with the wildlife that frequents the area, including lion, cheetah, serval cat, genet, elephant, Maasai giraffe, waterbuck, impala, lesser kudu, Perter's gazelle, dik dik, zebra, fringe eared oryx, eland, mongoose and monitor lizard.
+            </p>
+          </div>
+        </p>
+      </div>
+    </section>
+    <hr class="hr">
+    
+    <section class="row" style="background-image: url('Galdessa-main-xx.jpg'); background-size: 100% 100%; background-repeat: no-repeat; color:white;">
+
+      <div class="col-md-6" style="background-color:rgba(0, 0, 0, 0.5);">
+        <h2>Galdessa Main Camp Accommodation</h2>
+        <p style="text-align:justify;">
+          <b>Galdessa Camp</b> offers a luxurious and once in a lifetime opportunity for travelers seeking to immerse themselves in a hidden and untouched corner of Tsavo National Park. Enjoying a position on the Galana river, wildlife sightings are frequent, whether guests enjoy a game drive or remain at the camp watching hippos, elephants and more as they come to cool off in the river. Self-catering, fully staffed with trained chef. Galdessa Camp accommodates 10 people across <b>five tents</b>. It can be booked in tandem with Galdessa Little, which sleeps a further 6 people across three tents. The semi-tented bungalows at Galdessa are solid, permanent structures, built on wooden platforms and spaced far enough apart to ensure a good level of privacy. Bathrooms have bucket showers (hot water on demand), and flush toilets. The rooms have a very natural, earthy feel, with furniture constructed from tree trunks and branches found within the park, dark polished wood panel floors, thatch roofing, and walls that are part canvas, part stone-and-mortar. They open onto private viewing decks. There's a large honeymoon suite at Galdessa's private bush camp. Tasty bush breakfasts are provided during morning game activities, while delicious Italian cuisine is served for lunch and dinner. The menus at Galdessa are fixed, but the staff are generally very flexible. As always, it's best to let us know in advance of your dietary requirements. There are no age restrictions at <b>Galdessa Main Camp</b>, though it's not ideal for younger children. The camp doesn't offer any special facilities for youngsters. It's also entirely unfenced, meaning children will need to be under constant supervision. <b>Galdessa Main Camp</b> is closely involved with a black rhino re-introduction project that aims to create a sustainable environment for these endangered creatures in Tsavo. So far, the project has been a success, with as many as 50 rhinos now in living Tsavo, giving the park one of the largest populations in Africa. 
+        </p>
+      </div>
+    
+      <div class="col-md-6" style="background-color:rgba(0, 0, 0, 0.5);">
+        <h2>Little Galdessa Camp Accommodation</h2>
+        <p style="text-align:justify;">
+          <b>Galdessa Little camp </b> features three tented bedrooms, accommodating up to six guests. It can be booked in tandem with <b>Galdessa main Camp</b>, which sleeps a further ten guests across five tented bedrooms. Tucked beneath a thatched roof, each of Galdessa Camp Little bedrooms feels like its own personal oasis. Take advantage of breathtaking vistas across the Galana River from your private deck or enjoy a shower under the stars. Guests have exclusive use of <b>Galdessa Camp Little</b>. No other groups will be booked in the property at the same time. <b>Galdessa private camp is self-catering</b>, which allows you to feel at home and customize your trip according to your tastes. Guests are responsible for bringing their own groceries for the duration of their stay, along with any other essentials they might need. We provide both still and sparkling drinking water, along with shampoo, conditioner, lotion, and body wash. The <b>Galdessa private lodge</b> is fully staffed. Our friendly, knowledgeable team will take care of you during your stay, including turn-down, cleaning, laundry, and food and drink service, while our resident chef prepares all your meals. A comprehensive shopping guide can be provided by our office upon request. We can also handle catering logistics. When booking, please let our Nairobi office know if you are interested in this service. Check-in is strictly after 10:00 am. Check-out is strictly before 9:30 am. Access to the orphans’ mud-bath is not possible on the day of check-out, as that experience is reserved for the arriving guests. By air: 50 minutes by air from Wilson Airport (Nairobi) to Luggard’s Airstrip, followed by a 20-minute game drive to camp By train: Four hours on Kenya’s new railroad from Nairobi to Voi Station. From the station, you can meet your vehicle and travel a further one-hour drive on good roads to the camp. <b>By car:</b> Five to six hours by road from Nairobi Park fees are not included in lodge rates. These are payable direct to Kenya Wildlife Services.  
+        </p>
+      </div>
+    
+    </section>
+    
+    
+    <hr class="hr">
+      <section class="row">
+        <div class="col-md-12">
+          <h2>Galdessa Camp Overview </h2>
+          <p style="text-align:justify;">
+            Nestling under the doum palms in an isolated corner of Tsavo East National Park, the area is excellent for elephants and lions and has spectacular birdlife. Formerly owned by the exuberant owners of <b> Alfajiri Villas at Diani</b>, the lodge was sold in 2017 to the <b>Sheldrick Wildlife Trust</b>, You arrive into the welcome shade of the main dining and lounge area – a spacious, open-sided, high-roofed structure with glorious views across the river, all the furniture is custom-made, with heavy, varnished logs of dead wood salvaged from the park and stylish, cream cushion covers. <b>Galdessa Camp</b> is unfenced and visited constantly by large heads of elephants and hippos. Consequently, all your movements around <b>Galdessa Camp Day</b> and night are escorted, by the coolly white-uniformed, red-sashed stewards and waiting staff, Private Galdessa, have their own private stewards, for the course of their stay). The bandas at<b> Galdessa Camp</b> forming the main part of the camp are ranged upstream along the south bank of the Galana river from Banda 1 close to the central area of the camp to banda 5, about 300m away, The bandas are built on raised platforms of dark polished boards, Soaring makuti roofs protect an open-sided partly permanent structure with walls of cream-coloured tent canvas and green mosquito screen. The front of these opens completely with the canvas zipping away to the sides, really an airy and comfortable cottage – that is hard to get right, but Galdessa has cracked it. The style of furniture in the main areas of camp is continued in the bandas, with fun, but very heavy, armchairs and bed frames, constructed from dead wood trunks and branches, and padded with big cushions. As the bandas aren’t mosquito-proof, all the beds have frame-hanging mosquito nets. Banda 7 is a honeymoon suite. Sundowners and short walks around Lugards’ Falls, bush breakfasts and early and late game drives are the main activities on offer at <b>Galdessa camp</b>. You can also do more strenuous bush walks – not a bad idea in order to work off the calories accumulated with each new encounter with <b>Galdessa Lodge</b> kitchen. The walks, for which Galdessa has negotiated special permission from KWS, set off from Galdessa itself, accompanied by armed KWS rangers. Galdessa Camp is in a part of the Tsavo Park that despite its accessibility is relatively isolated, as it is not on one of the handful of main arterial earth roads across the park. In fact, the river road south from Galdessa first crosses an excitingly rocky lugga (seasonal river course) that deters most vehicles not based at the <b>Galdesa camp</b> from attempting it, there is plenty of very enjoyable game-viewing and poking around to be done quite close to Galdessa, where it’s rare to run into any vehicles except the odd one from Galdessa itself. You will regularly see the classically red-coloured elephants of the region wading across the river, often accompanied by snorts of annoyance from dozing hippos, and you will also be treated to close encounters with lions, just minutes from Galdessa camp, Black rhinos are carefully monitored by KWS rangers, with all this wildlife around, the noises of the night and the dawn chorus are astonishing.
+ 
+          </p>
+        </div>
+        
+      </section>
+      <hr class="hr">
+      <section class="row">
+        <div class="col-md-12">
+          <h2>Galdessa Camp History </h2>
+          <p style="text-align:justify;">
+            Back in 1992 Anthony Russell found this heavenly spot on the Galana River, deep in Tsavo East, a park of over 11,000 square kilometers of pure wilderness. Anthony Russell was the first person to win a Kenya Wildlife Service long-term lease in Tsavo East. Anthony coined Galdessa the name, which is in the local Waliangulu dialect the tribal name for Baboon as there are many baboons in this location of Tsavo East. Before construction commenced, we had to clear the area of them after which, and Anthony named it in their honor. Galdessa Camp is set on a large bend in the river deep in Tsavo East which gives it constant breeze, the tentage is set under a clustered of doum palm trees. The original designs on the first house have been incorporated into the overall design of Galdessa Camp. Today it is just the same, set in time and great wild life: elephants, lion and huge herds of buffalo, leopard and cheetah. Today Galdessa’s management, services and food are first class. In 1993 we reintroduced black rhino to this area of Tsavo East with KWS. The project started with four rhinos from Nairobi National Park. KWS planned an ambitious free release system and over the next six years we ended up with sixty-four black rhinos successfully released. Today they can also be spotted in the vicinity of Galdessa. Tsavo East remains a great wilderness and Galdessa a gem in this milestone. The site is located 15 kilometers upstream from Lugards Falls, famous for its beautiful rock formations, where there is also an airstrip, which can be used for private aircraft transfers. <b>Galdessa Camp</b> remote access in a very wild part of the Tsavo Park ensures that tourism is kept to a minimum, enhancing the intimacy the camp, and guests, enjoy with nature. The accommodation and activities are geared at the discerning traveler looking for a private experience in the African bush. Tsavo is still very much pristine and you will live your experience without the inconvenience of mass tourism, which does not come to this remote yet magical part of the park. Wildlife regularly use the campgrounds, especially elephants at least 8,000 in number, constitute Kenya’s largest population, a daily sign that the Camp and Friends of Tsavo Organization have succeeded in minimizing the impact on the environment. The camp is located in the heart of one of Africa’s most successful conservation projects, and is lucky to have 48 black rhinos in its direct vicinity. Under the shade of the Doum palms, the camp’s 5 spacious “bandas” are comfortable, fresh, and elegant. Set well apart, they all face the river and the Yatta Plateau, the world’s largest fossilized lava flow (over 200 kilometers long). The term “banda” is an African word describing a bungalow-like structure enhanced by the best attributes a true-tented camp accommodation has to offer. Two of Galdessa’s bandas are organized in suites, with their own, separate thatched sitting room where private meals may also be served. The most remote banda is ideal for honeymooners in search of privacy, with its own sitting room, viewing platform and water wallow. The Galdessa room is set under a thatch structure for coolness and comfort, with a spacious en-suite bathroom/dressing room. Perfectly adapted to the environment, it is a refined expression of the safaris of yesteryear. The walls are made of canvas and mosquito netting tastefully set in timber frames. The natural woods, thatched roofs, stone tables and mosquito netting form a romantic interior which enhances the contact with the rhythms and sounds of the natural world outside. To underscore their commitment to eco-tourism leadership in Kenya, <b>Galdessa Camp Tsavo Park</b> uses solar power and recycles their waste, and has even installed a water treatment plant. The waterside location translates into activities in addition to game drives, most notably guided walks by the river and bush breakfasts, and whatever you do there will be no crowds. Tsavo East is huge in size and you could easily spend a morning looking at the wildlife – the chances of seeing lions is high and leopards are not rare — without ever coming across another vehicle. At Galdessa Camp Tsavo itself you may well see elephants at very close quarters as young ones like to follow the bank of the river to eat the fruit of the Rousseauesque doum trees. An escarpment prevents animals from entering the camp grounds from the river but your luxury, en-suite tent is close to the water so you may unzip and look out in the morning to find a baby elephant chomping away at a distance of a few metres.
+ 
+          </p>
+        </div>
+        
+      </section>
+      <hr class="hr">
+      <section class="row">
+        <div class="col-md-12">
+          <h2>Galdessa Camp How to get there </h2>
+          <p style="text-align:justify;">
+            Galdessa Camp is located in Tsavo East National Park, from Nairobi it takes roughly five hours through the Nairobi-Mombasa highway and from Mombasa it takes roughly four hours to the Galdessa Camp depending on the traffic. One can also get to the camp by air with the flight taking approximately 40 minutes from Mombasa and 1 hour from Nairobi to Manyani Airstrip where you will be picked to the Galdessa Camp for an estimate of 30 minutes’ drive. The camp is located on the southern bank of Galana River. which ensures spotting of wild animals before or after your game drive since the animals visit the Galana River to cool down themselves and drinking water. This makes you start your safari while relaxing in the camp and thus makes you eager to explore more in the Tsavo East National Park. Galdessa camp has a main camp and a private camp. The main camp has more than 12 luxurious, semi tented and spacious bungalows with a private veranda. Between each bungalow there is privacy and each bungalow has an en suite bathroom. There are a dining room and restaurant where guests can enjoy their meals while viewing the beauty of savannah and wild animals who frequently visit the Galana River. The private camp consists of 3 luxurious semi tented bungalows with en suite bathrooms and has its dining room. The weather is hot and dry but since the camp is at the bank of Galana River you will enjoy a cool breeze while enjoying the amazing views of volcanic features such as the yatta plateau, the world’s longest and oldest fossilized lava flow. Animals such as the hippos and elephants and a variety of different birds’ species do visit the galena river. Galdessa Camp's location means it is blessed by many things, from its views of the Yatta Plateau, to the Galanda river rolling past its doorstep, but little surpasses the wildlife living all around. Elephants are frequently in the area and some of them have learned that Galdessa Camp is ripe with doum palm fruits, which they love. Ed, as he's been affectionately called by camp staff, is a character who loves to pop by and enjoy nature's offerings whenever he's in the area. You can find out more about the two Galdessa camps, which generate funds for conservation projects in Tsavo, at Galdessa Camp isn't only a stunning lodge generating funds for conservation that sits on the banks of the Galana River, in Kenya's largest National Park, Tsavo East: It is also a popular haunt for visiting wildlife and one of our most regular guests is Ed - as our lodge staff chose to name him - a young bull elephant. Ed visits at different times throughout the year and while he is always happy to munch on the grasses, his favourite treat is the doum palm nuts, which fall from the palms surrounding the lodge. Given his love of these, our staff collect the doum nuts from the lawns, so that when he visits - or any of his friends, as we have a few regular elephant visitors - we can always toss him a few of his favourite things to munch on.
+ 
+          </p>
+        </div>
+        
+      </section>
+      <hr class="hr">
+      <section class="row">
+        <div class="col-md-12" style="position:relative; padding: 0;">
+          <img src="Galdessa-abcdefg.jpg" alt="Image" style="width:100%; height:100vh; object-fit: cover;">
+          <div id="textCarousel" style="position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); text-align:center; color:white; background-color:rgba(0, 0, 0); padding:20px; box-shadow: 0px 2px 4px rgba(250, 250, 250, 0.5);">
+            <div class="carousel-item active">
+              <h2>Tsavo East Safaris</h2>
+              <p style="text-align:justify; font: weight 6px;">
+                The southern part of Tsavo East National Park is a popular destination for short Tsavo East National Park safaris by minibus from the coast. Most of these trips take clients up to Voi, where they stay in one of the Tsavo East lodges, most of which are located only a few minutes’ drive from the highway. None of Tsavo East’s airstrips are currently used by scheduled flights. While chartering an exclusive flight for your trip (usually from Nairobi) is an option, chartering can be expensive for small parties or couples. We therefore offer high-quality road transfers, in fully equipped 4x4 safari vehicles, for Expert Africa travellers doing Tsavo East safari add-ons in. These include full board stays, with all activities, at two of the park’s best safari camps.</p>
+            </div>
+            <div class="carousel-item">
+              <h2>Getting to Tsavo East National Park</h2>
+              <p style="text-align:justify; font: weight 6px;">
+                It takes between 5 to 7 hrs to get to Tsavo west national park by road from Nairobi. The park has four gates and they are Manyani Gate, Voi Gate, Buchuma Gate, and Sala Gate. Roads in the reserve are fairly good and can be traversed by 2-wheel drive vehicles although they can be a challenge in the wet season and 4-wheel drive vehicles will do better. It is also possible to get to the park using chartered flights (no scheduled flights) and there are over 19 airstrips that can be used.
+              </p>
+            </div>
+            <div class="carousel-item">
+              <h2>Galdessa Camp Activities</h2>
+              <p style="text-align:justify; font: weight 6px;">
+                <ul style=" text-align:justify;">
+                  <li>Game drive circuits within the vast plains and riverbeds of Tsavo East</li>
+                  <li>Relax in the infinity swimming pool overlooking the Galana River</li>
+                  <li>Game viewing in the river below</li>
+                  <li>Sundowners and picnics in enchanted, undiscovered corners of Tsavo</li>
+                  <li>Exercise in the on-site gym</li>
+                  <li>Strolls along the property’s protected, scenic walking path</li>
+                  <li>Exclusive visiting privileges to meet the orphaned elephants and Keepers at the Trust’s Voi Reintegration Unit</li>
+                </ul>
+              </p>
+            </div>
+          </div>
+          <!-- Icons below text -->
+          <div style="position:absolute; bottom:20px; left:50%; transform:translateX(-50%);">
+            <i class="bi bi-chevron-left" onclick="prevSlide()" style="font-size: 70px; cursor: pointer;"></i>
+            <i class="bi bi-chevron-right" onclick="nextSlide()" style="font-size: 70px; cursor: pointer;"></i>
+          </div>
+        </div>
+      </section>
+      <script>
+        var slideIndex = 1;
+        showSlide(slideIndex);
+      
+        function prevSlide() {
+          showSlide(slideIndex -= 1);
+        }
+      
+        function nextSlide() {
+          showSlide(slideIndex += 1);
+        }
+      
+        function showSlide(n) {
+          var i;
+          var slides = document.getElementsByClassName("carousel-item");
+          if (n > slides.length) {
+            slideIndex = 1;
+          }
+          if (n < 1) {
+            slideIndex = slides.length;
+          }
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          slides[slideIndex - 1].style.display = "block";
+        }
+      </script>
+
+      <hr class="hr">
+      <section class="row">
+        <div class="col-md-12">
+          <h2>How to Book Galdessa Lodge   </h2>
+          <p style="text-align:justify;">
+            Safari camps is the perfect website to use when booking a tented camp with a wide range of safari camps in Tsavo East Park to choose from you're sure to find the perfect Tsavo East camp to suit your needs and budget. Tsavo camps offers competitive prices or rates with many Tsavo East camps offering discounts and special offers, this Tsavo camps website is also easy to use, with a simple and intuitive booking process. Tsavo Safari camps offers excellent customer service, with a dedicated team on hand to assist you with any queries or issues you may have. You can contact us by completing the reservations form on our website by telephone or email provided. Your l camps in Tsavo Park booking will not be complete until you receive a safari camp confirmation reference number from us, why book with us? Not only will you enjoy exclusive rates or prices but you will also have access to a wide range of high-quality camps in some of the most sought-after Tsavo safari destinations. Booking through our Tsavo Safari Camp is quick and easy with just a few clicks you can secure your dream Tsavo Safaris Camps and start counting down the days until you arrive your Tented Camp. Scroll down to book the best Tsavo safari Camps of your life at an unbeatable price! We require payments in advance from you to confirm your Safari Camp in Tsavo booking. Tsavo Camps offers many of great camps deals to suit all tastes and budgets. Choose from our great selection of camps in Tsavo ranging from 5-star camps and luxury camps to tented camps. Whether you are looking for a bush camp to intimate camps The Tsavo East Camps always have a great deal for you. To find the perfect Tsavo Camp enter your camp dates, and hit search. From here, you can sort a camp in Tsavo by price and rating or filter by property camp or tented camp amenities and safari camp price. Want a tented camp in the woods, a private hot tub, or a pet-friendly safari camp? Our camps in Tsavo bookings are subject to availability. Safari camps manages a portfolio of camps in Kenya and boutique camp in Tsavo, by booking accommodation in any or more of our camps in Kenya, you can explore the diverse landscape and culture that Kenya has to offer. Our collection of four stunning safari camps offers some of the best safari camps in Kenya. Because each one is so unique and showcases a different part of Kenya’s diverse landscape, when taken together they offer an unbeatable combination of all that is incredible about this magical part of the world. The diversity of experiences available across our collection really enables our guests to do more than just ‘scratch the surface’ of East Africa... Our wildlife camps are authentic, meaningful and immersive. If you’re looking for a camp safari that encompasses safari adventure epic wildlife, bucket-list dreams, spa camp luxury, relaxation, world-class camp cuisine, camp conservation, community experiences and more, then our collection of the best tented camps will certainly satisfy your travel wish list. From the avid-photographer to the serenity-seeking spa lover, the camps are a perfect choice for every type of Kenya safari-goer. 
+ 
+          </p>
+        </div>
+        
+        
+      </section>
+      <hr class="hr">
+      
+      
+      <section class="row" id="gallery">
+        <h2 style="text-align: center;">Our Gallery</h2>
+        <div class="col-md-12">
+          <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row">
+                  <div class="col-md-4">
+                    <img src="Galdessa-Main-a.jpg" class="d-block w-100" alt="Gallery Image 1">
+                    <p> Beautiful Decor</p>
+                  </div>
+                  <div class="col-md-4">
+                    <img src="Galdessa bedroom main camp.jpg" class="d-block w-100" alt="Gallery Image 2">
+                    <p>Main Bedroom</p>
+                  </div>
+                  <div class="col-md-4">
+                    
+                    <img src="Galdessa-main-x.jpg" class="d-block w-100" alt="Gallery Image 3">
+                    <p> Accomodation</p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row">
+                  <div class="col-md-4">
+                    <img src="Galdessa-mainv.jpg" class="d-block w-100" alt="Gallery Image 4">
+                    <p>Outside view</p>
+                  </div>
+                  <div class="col-md-4">
+                    <img src="Galana.jpg" class="d-block w-100" alt="Gallery Image 5">
+                    <p>River Galana</p>
+                  </div>
+                  <div class="col-md-4">
+                    <img src="PHOTO-2018-03-12-19-17-15.jpg" class="d-block w-100" alt="Gallery Image 6">
+                    <p> Ancient Baobabs</p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row">
+                  <div class="col-md-4">
+                    <img src="PHOTO-2020-11-01-18-17-10.jpg" class="d-block w-100" alt="Gallery Image 4">
+                    <p>Elephants</p>
+                  </div>
+                  <div class="col-md-4">
+                    <img src="pool.jpg" class="d-block w-100" alt="Gallery Image 5">
+                    <p>Swimming Pool</p>
+                  </div>
+                  <div class="col-md-4">
+                    <img src="Galdessa-elephants-shot.jpg" class="d-block w-100" alt="Gallery Image 6">
+                    <p>Ancient Elephant</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </section>
+      
+      
+      
+      <hr class="hr">
+      
+      <section class="row d-flex justify-content-center" id="contact">
+        <h2 style="text-align: center;">Contact Us</h2>
+        <div class="col-md-6">
+          <!-- Contact form -->
+          <form id="contactForm">
+            <div class="mb-3">
+              <label for="name" class="form-label">Your Name</label>
+              <input type="text" class="form-control" id="name" name="name" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Your Email</label>
+              <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="mb-3">
+              <label for="subject" class="form-label">Subject</label>
+              <input type="text" class="form-control" id="subject" name="subject" required>
+            </div>
+            <div class="mb-3">
+              <label for="subject" class="form-label">Your Phone</label>
+              <input type="text" class="form-control" id="subject" name="subject" required>
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+        </div>      
+      </section>
+        <br>
+        <hr class="hr">
+    </main>
+
+  <footer class="text-light py-3">
+    <div class="container-fluid">
+      <ul class="nav justify-content-center footer-links">
+        <li class="nav-item"><a href="" class="nav-link">HOME</a></li>
+            <li class="nav-item"><a href="" class="nav-link">ABOUT US</a></li>
+            <li class="nav-item"><a href="" class="nav-link">WHY US</a></li>
+            <li class="nav-item"><a href="" class="nav-link">REVIEWS</a></li>
+            <li class="nav-item"><a href="" class="nav-link">BLOGS</a></li>
+            <li class="nav-item"><a href="#gallery" class="nav-link">GALLERY</a></li>
+            <li class="nav-item"><a href="#contact" class="nav-link">CONTACT US</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS (optional, if you need JS functionalities) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Add this script tag at the end of your HTML body -->
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script>
+  (function() {
+    // Initialize EmailJS with your user ID
+    emailjs.init("YOUR_USER_ID");
+
+    // Add event listener to the form
+    document.getElementById("contactForm").addEventListener("submit", function(event) {
+      event.preventDefault(); // Prevent the default form submission
+
+      // Get the form data
+      let formData = {
+        name: document.getElementById("name").value,
+        email: document.getElementById("email").value,
+        subject: document.getElementById("subject").value,
+        message: document.getElementById("message").value
+      };
+
+      // Send the form data using EmailJS
+      emailjs.send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", formData)
+        .then(function(response) {
+          console.log("Email sent successfully!", response);
+          alert("Your message has been sent successfully!");
+        }, function(error) {
+          console.error("Email sending failed:", error);
+          alert("Sorry, an error occurred while sending your message. Please try again later.");
+        });
+    });
+  })();
+</script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>

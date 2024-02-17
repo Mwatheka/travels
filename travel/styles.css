@@ -1,0 +1,109 @@
+/* Basic Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact-info {
+  text-align: right;
+}
+
+nav {
+  background-color: #444;
+}
+
+.navigation {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navigation li {
+  display: inline;
+}
+
+.navigation li a {
+  display: inline-block;
+  padding: 10px 20px;
+  color: #fff;
+  text-decoration: none;
+}
+
+main {
+  padding: 20px;
+}
+
+.icon-content {
+  display: flex;
+}
+
+.content {
+  flex: 2;
+  padding-right: 20px;
+}
+
+.gallery {
+  flex: 1;
+}
+
+.content-section {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.content-left {
+  flex: 2;
+  padding-right: 20px;
+}
+
+.image-right img {
+  max-width: 100%;
+  height: auto;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.footer-links {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  display: inline;
+}
+
+.footer-links li a {
+  display: inline-block;
+  padding: 5px 10px;
+  color: #fff;
+  text-decoration: none;
+}
+/* Custom CSS */
+a.nav-link,
+.footer-links li a {
+  color: #fff; /* Sets link color to white */
+}
+
+.icons-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
